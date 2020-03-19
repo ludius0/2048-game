@@ -4,3 +4,11 @@ I tried copy of the 2048. It was fun and challanging (I tried write tkinter code
 
 Language: python
 GUI: tkinter
+
+Keyboard input (with GUI version):
+"a" - up
+"d" - left
+"w" - up
+"s" - down
+"i" - end game
+"p" - restart game
