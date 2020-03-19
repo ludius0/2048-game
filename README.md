@@ -6,9 +6,9 @@ Language: python
 GUI: tkinter
 
 Keyboard input (with GUI version):
-"a" - up
-"d" - left
-"w" - up
-"s" - down
-"i" - end game
-"p" - restart game
+"a" - up; 
+"d" - left; 
+"w" - up; 
+"s" - down; 
+"i" - end game; 
+"p" - restart game;
