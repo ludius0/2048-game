@@ -80,10 +80,11 @@ def p_board(b):
     global status
     score = sum(b[0]) + sum(b[1]) + sum(b[2]) + sum(b[3])
     if game == True:
-        for i in range(4):
-            print(b[i])
-        print(f"Score: {score}")
-        print("-"*20)
+        if status == True:
+            for i in range(4):
+                print(b[i])
+            print(f"Score: {score}")
+            print("-"*20)
     else:
         print("You lost!")
 
@@ -95,8 +96,12 @@ def generate_number(b):
         if min(b[0]) == 0 or min(b[1]) == 0 or min(b[2]) == 0 or min(b[3]) == 0:    # Make sure there is somewhere 0
             while True:                                                             # Looping until find thata position to write number 2
                 x, y = random.randint(0, 3), random.randint(0, 3)
+                j = random.randint(1, 10)                                            # Add 10% chance for 4
                 if b[x][y] == 0:
-                    b[x][y] = 2
+                    if j == 10:
+                        b[x][y] = 4
+                    else:
+                        b[x][y] = 2
                     break
         else:
             game = False                                                            # End game loop
