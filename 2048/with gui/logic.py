@@ -31,7 +31,6 @@ def reverse(b):   # Return reverse matrix
     return b
 
 def transp(b):    # Swap rows and columns
-    global status
     a = [[0 for i in range(4)] for i in range(4)]
     for i in range(4):
         for j in range(4):
