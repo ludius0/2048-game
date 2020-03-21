@@ -57,17 +57,12 @@ def merge(b):     # Merge number if it same (from right to left) ### This functi
                 status = True
     return b
 
-def reverse(b):   # Return reverse array
-    global status
-    a = []
+def reverse(b):   # Return reverse matrix
     for i in range(4):
-        a.append([])
-        for j in range(4):
-            a[i].append(b[i][3-j])
-    return a
+        b[i].reverse()
+    return b
 
 def transp(b):    # Swap rows and columns
-    global status
     a = [[0 for i in range(4)] for i in range(4)]
     for i in range(4):
         for j in range(4):
