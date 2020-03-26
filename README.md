@@ -12,3 +12,5 @@ Keyboard input (with GUI version):
 "s" -> down; 
 "i" -> end game; 
 "p" -> restart game;
+
+![Screenshot_3](https://user-images.githubusercontent.com/57571014/77689986-e83e3f00-6fa2-11ea-9ba3-aa744fdb05d0.png)
