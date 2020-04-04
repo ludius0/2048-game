@@ -39,7 +39,6 @@ class Board(tk.Frame):
         return (x, y) 
 
     def key_down(self, event): # add check for ending game
-        global check
         key = repr(event.char)
         if key == v.KEY_LEFT:
             self._left()
